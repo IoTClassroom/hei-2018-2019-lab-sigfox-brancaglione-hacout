@@ -14,7 +14,7 @@ void setup() {
 void loop() {
   
   int sensorValue = analogRead(A0);
-  Serial.print("light: ");
+  Serial.print("infrared: ");
   Serial.println(sensorValue);
 
   int percentage = map(sensorValue, 0, 1023, 0, 100);
